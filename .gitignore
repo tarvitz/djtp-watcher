@@ -1,0 +1,10 @@
+*.py[co]
+/ve3
+/ve
+/*.egg-info
+/.tox
+/.sass-cache
+/.idea
+/.coverage
+/db
+/data
