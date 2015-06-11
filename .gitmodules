@@ -1,0 +1,3 @@
+[submodule "djtp"]
+	path = djtp
+	url = https://github.com/tarvitz/djtp.git

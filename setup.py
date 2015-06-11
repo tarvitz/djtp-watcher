@@ -7,7 +7,6 @@ import sys
 
 py_version = sys.version_info
 version = "0.1"
-# version = ".".join([str(i) for i in __import__('dsfp').__VERSION__])
 readme = os.path.join(os.path.dirname(__file__), 'README.rst')
 
 CLASSIFIERS = [
@@ -35,23 +34,22 @@ if isinstance(py_version, tuple):
 
 
 setup(
-    name='djtp',
+    name='djtp_watcher',
     author='Nickolas Fox <tarvitz@blacklibrary.ru>',
     version=version,
 
     author_email='tarvitz@blacklibrary.ru',
-    url='http://pypi.python.org/pypi/djtp',
+    url='http://pypi.python.org/pypi/djtp-watcher',
 
-    download_url='https://github.com/tarvitz/djtp/archive/master.zip',
-    description='Django boilerplate project',
+    download_url='https://github.com/tarvitz/djtp-watcher/archive/master.zip',
+    description='Django boilerplate project watcher',
     long_description=open(readme).read(),
     license='MIT license',
     platforms=['OS Independent'],
     classifiers=CLASSIFIERS,
     install_requires=install_requires,
     packages=find_packages(
-        exclude=['tests', 'djtp/docs', 'djtp/media/components',
-                 'djtp/.coverage']
+        exclude=['tests', ]
     ),
     test_suite='tests',
     include_package_data=True,
