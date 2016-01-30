@@ -24,7 +24,7 @@ install_requires = [
     'six',
     'simplejson',
     'pytz',
-    'django==1.8.2',
+    'django==1.9.1',
 ]
 
 
